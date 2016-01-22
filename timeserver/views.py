@@ -33,7 +33,7 @@ class TimeView(APIView):
 			'minute' : time.minute, 
 			'second' : time.second, 
 			'microsecond' : time.microsecond, 
-			'timezone' : time.timezone() if time.tzinfo else '', 
+			'timezone' : time.tzname() if time.tzinfo else '',
 		}
 
 		# returns the data formatted in JSON and sets up response
