@@ -1,4 +1,4 @@
-from rest_framework.views import APIViews
+from rest_framework.views import APIView
 from .mixins import JSONResponseMixin
 from datetime import datetime
 from pytz import timezone as pytz_timezone
